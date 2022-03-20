@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//2. Faça um algoritmo para ler 12 números e armazenar em dois arrays: um com os números acima de 50. Outro com números abaixo de 50.
+        var nums = []
+        for(var i = 0; i < 12; i++){
+            nums.push (Number(prompt("Digite os 12 números")));
+        }
+
+        var num1 = []
+        var num2 = []
+
+        for(var i = 0; i <12; i ++){
+            if (nums[i] >= 50) {
+                num1.push(nums[i]);
+             }else if (nums[i] < 50){
+                num2.push(nums[i]);
+             }
+        }
+        document.write("Números maiores do que 50: " + num1);
+        document.write("<br>Números menores do que 50: " + num2);
+    </script>
+</body>
+</html>
